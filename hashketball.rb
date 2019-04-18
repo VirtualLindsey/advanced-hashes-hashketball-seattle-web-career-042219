@@ -37,7 +37,7 @@ def game_hash()
                               "Mason Plumlee" => {
                               :number => 1, 
                               :shoe => 19,
-                              :points => 17,
+                              :points => 26,
                               :rebounds => 19,
                               :assists => 10,
                               :steals => 3,
@@ -141,7 +141,10 @@ def team_colors(name)
 end
 
 def team_names
-  return [game_hash[:home][:name], game_hash[:away][:name]]
+  r = []
+  r << game_hash[:home][:name]
+  r << game_hash[:away][:name]
+  return r
 end
 
 def player_numbers(name)
