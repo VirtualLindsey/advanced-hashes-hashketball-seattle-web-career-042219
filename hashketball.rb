@@ -172,20 +172,22 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
-  rebound = 0
+  r = 0
   max = 0
+  
   game_hash[:home][:players].each do |k, v|
     if v[:shoe] > max
       max = v[:shoe]
-      rebound = v[:rebound]
+      r = v[:rebound]
     end
   end
   
   game_hash[:away][:players].each do |k, v|
     if v[:shoe] > max
       max = v[:shoe]
-      rebound = v[:rebound]
+      re = v[:rebound]
     end
   end
-  return rebound
+  
+  return r
 end
