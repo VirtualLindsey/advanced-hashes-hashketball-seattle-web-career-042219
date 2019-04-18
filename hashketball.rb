@@ -157,3 +157,23 @@ def player_numbers(name)
   end
   return r
 end
+
+def player_stats(name)
+  if game_hash[:home][:players].key?(name)
+    return game_hash[:home][:players][name]
+  else
+    return game_hash[:away][:players][name]
+  end
+end
+
+def big_shoe_rebounds
+  name = ""
+  max = 0
+  game_hash[:home][:players].each do |i|
+    if i[:shoe] > max
+      max = i[:shoe]
+      name = i
+    end
+  end
+  return name
+end
