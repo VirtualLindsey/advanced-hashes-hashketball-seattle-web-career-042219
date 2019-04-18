@@ -187,5 +187,5 @@ def big_shoe_rebounds
       name = k
     end
   end
-  return name
+  return max
 end
