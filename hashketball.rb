@@ -155,6 +155,7 @@ def player_numbers(name)
     end
   else
      game_hash[:away][:players].each do |i|
+       puts i
       r << i[:number]
     end
   end
