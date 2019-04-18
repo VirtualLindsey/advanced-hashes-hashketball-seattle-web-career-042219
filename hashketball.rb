@@ -41,7 +41,7 @@ def game_hash()
                               :rebounds => 12,
                               :assists => 6,
                               :steals => 3,
-                              :blocks => 1,
+                              :blocks => 8,
                               :slam_dunks => 5,
                               },
                               "Jason Terry" => {
