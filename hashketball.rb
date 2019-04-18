@@ -176,6 +176,9 @@ def big_shoe_rebounds
   max = 0
   
   game_hash[:home][:players].each do |k, v|
+    puts "#########"
+    puts k
+    puts v
     if v[:shoe] > max
       max = v[:shoe]
       r = v[:rebound]
