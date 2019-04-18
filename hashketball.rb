@@ -154,7 +154,7 @@ def player_numbers(name)
       r << i[:number]
     end
   else
-     game_hash[:away][:players].each do |i|
+     game_hash[:away][:team_name].each do |i|
       r << i[:number]
     end
   end
