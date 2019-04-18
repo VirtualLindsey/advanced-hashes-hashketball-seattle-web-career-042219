@@ -1,11 +1,17 @@
 def game_hash()
   d = {
     :home => {
-                :team_name => [],
+                :team_name => "",
                 :colors => [],
                 :players => {
-                              "name": {
-                                :number
+                              :number: , 
+                              :shoe: ,
+                              :points: ,
+                              :rebounds: ,
+                              :assists: ,
+                              :steals: ,
+                              :blocks: ,
+                              :slam_dunks: ,
                               }  
                 }
               },
