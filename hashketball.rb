@@ -117,5 +117,33 @@ def game_hash()
 end
 
 def num_points_scored(name)
-  if game_hash[:home][:players].key
+  if game_hash[:home][:players].key?(name)
+    return game_hash[:home][:players][name][:points]
+  else
+    return game_hash[:away][:players][name][:points]
+  end
+end
+
+def shoe_size(name)
+  if game_hash[:home][:players].key?(name)
+    return game_hash[:home][:players][name][:shoe]
+  else
+    return game_hash[:away][:players][name][:shoe]
+  end
+end
+
+def team_colors(name)
+  if game_hash[:home][:team_name] == name
+    return game_hash[:home][:colors]
+  else
+    return game_hash[:away][:colors]
+  end
+end
+
+def team_names
+  return [game_hash[:home][:name], game_hash[:away][:name]]
+end
+
+def player_numbers(name)
+  
 end
