@@ -187,5 +187,5 @@ def big_shoe_rebounds
       rebound = v[:rebound]
     end
   end
-  return max
+  return rebound
 end
